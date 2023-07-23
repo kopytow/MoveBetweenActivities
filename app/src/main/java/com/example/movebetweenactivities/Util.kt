@@ -11,5 +11,5 @@ fun Context.showStackInfo(): String {
         }[0]
     return """Num -> ${task.numActivities}
             | Top -> ${task.topActivity!!.shortClassName}
-            | Bas -> ${task.topActivity!!.shortClassName}""".trimMargin()
+            | Bas -> ${task.baseActivity!!.shortClassName}""".trimMargin()
 }
